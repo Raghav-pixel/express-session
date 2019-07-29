@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Welcome</h1>
+<% if(userId){ %>
+<a href='/home'>Home</a>	
+<% }
+else{ %>
+<a href='/login'>Login</a>
+<a href='/register'>Register</a>
+	<% } %>
+
+<form method='post' action='/logout'>
+<button>Logout</button>
+</form>
+
+</body>
+</html>
